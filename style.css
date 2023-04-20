@@ -28,7 +28,11 @@ html{
 /******************************************************/
 
 /**********************nav*****************************/
-
+nav{
+    position:fixed;
+    width :100%;
+    z-index: 10;
+}
 
 .nav-wrapper{
     height: 50px;
@@ -38,6 +42,7 @@ html{
     align-items: center;
     justify-content: space-between;
     z-index: 5;
+
 }
 
 
@@ -329,7 +334,7 @@ html{
 
 @keyframes breathing {
     0%,100%{
-        box-shadow: 0 0 20px 20px black;
+        box-shadow: 0 0 10px 10px black;
     }
     50%{
         box-shadow: 0 0 0 0 black;
@@ -355,26 +360,55 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: linear-gradient(315deg, #2b4162 0%, #2e2925 74%);
     height: 100%;
     width: 20%;
 }
 .about1{
-    background-color: black;
+ 
     height:35%;
 }
 .about2{
-    background-color: blue;
-    height: 25%;
-}
-.about3{
-    background-color: red;
-    height: 15%;
-}
-.about4{
-    background-color: green;
     height: 25%;
 }
 
+.about2 > h3{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 2px;
+}
+.about2 li{
+    font-size: 20px;
+}
+
+.about3{
+    
+    height: 15%;
+}
+.about3 > h3 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 2px;
+
+}
+.about4{
+    height: 25%;
+}
+.about4 > h3{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 2px;
+}
+.about-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-flex img{
+    width: 40%;
+    height: 50%;
+}
 
 .about-info {
     height: 100%;
@@ -388,32 +422,43 @@ html{
     margin-top: 0;
     text-align: center;
     margin-bottom: 0;
+    color: whitesmoke;
 }
-.life{
-    grid-row: 2 / 10 ;
-    grid-column: 1 / 40;
-}
-.hobbies{
+
+.who{
     grid-row: 11/20;
     grid-column: 1/20;
+    font-size: 25px;
 }
-.goals{
+.who >p{
+    margin: 3rem 1rem 3rem 1rem;
+    bottom: 2rem;
+}
+.experience{
     grid-row: 11/15;
     grid-column: 21/40;
 }
-.placeholder {
+.education {
     grid-row: 16/20;
     grid-column: 21/40;
 }
 
-.life, .hobbies, .goals, .placeholder{
+.life, .who, .experience, .education{
     background-color: grey;
-    background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%);
+    background: linear-gradient(315deg, #2b4162 0%, #2e2925 74%);
     border-radius: 1em;
-    /* flex-basis: 300px;
-    height: 100px; */
     box-shadow: 0 0 20px 20px black;
     animation: breathing 3s linear infinite;
+}
+.life{
+    background-image: url(images/mu.png);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 2 / 10 ;
+    grid-column: 1 / 40;
 }
 
 .about-info hr {
@@ -431,7 +476,6 @@ html{
     
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: url(images/about-bckg.png); */
     background-image: url(images/blackWaves.jpg);
     
 }
