@@ -470,17 +470,114 @@ nav{
 
 /******************************************************/
 
-/***********************Skills**************************/
-.skills{
+/***********************Manager**************************/
+
+.manager{
     height: 800px;
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(images/blackWaves.jpg);
-    
+    display: flex;
+    gap: 10px;
 }
-.skills>h1 {
-    margin-top: 0;
-    text-align: center;
+
+.skills{  
+    gap: 10px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: start;
+    width: 40%;
+    margin-left: 1%;
+    height: 100%;
+}
+.skills h2 {
     color: whitesmoke;
 }
+
+.know { 
+    margin-top: 15px;
+    flex-basis: 53%;
+}
+.learning{
+    flex-basis: 40%;
+}
+.know ,.learning {
+    background: linear-gradient(315deg, #2b4162 0%, #2e2925 74%);
+    text-align: center;
+    border-radius: 2rem;
+    animation: breathing 3s linear infinite;
+    /* margin: 40px 0; */
+}
+.know-images{
+    display: flex;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.know-images img {
+    flex-basis: 150px;
+    height: 100px;
+}
+.learning-images{
+    display:flex;
+    justify-content: space-evenly;
+}
+.learning-images img {
+    flex-basis: 250px;
+    height: 200px;
+}
+
+.skills hr {
+    width: 50%;
+    border: none;
+    border-top: 10px dotted whitesmoke;
+
+}
+.skill-grid{
+    margin-top: 15px;
+    height:94%;
+    width: 60%;
+    background-color: red;
+    display: grid;
+    grid-template-rows: repeat(40, 1fr);
+    grid-template-columns: repeat(40, 1fr);
+    background: linear-gradient(315deg, #2b4162 0%, #2e2925 74%);
+    text-align: center;
+    border-radius: 2rem;
+    animation: breathing 3s linear infinite;
+    margin-right: 1%;
+    gap: 1%;
+}
+
+.proj1{
+    background-color: red;
+    grid-row: 3 / 21;
+    grid-column: 2 / 30;
+}
+.proj2{
+    background-color: green;
+    grid-row: 3/ 39;
+    grid-column: 30/40;
+}
+.proj3{
+    background-color: pink;
+    grid-row: 21/39;
+    grid-column: 14/30;
+}
+.proj4{
+    background-color: purple;
+    grid-row: 21/30;
+    grid-column: 2/14;
+}
+.proj5{
+    background-color: oldlace;
+    grid-row: 30/39;
+    grid-column: 2/14;
+}
+
+
+
+
+
+
