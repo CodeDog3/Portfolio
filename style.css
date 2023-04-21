@@ -506,7 +506,6 @@ nav{
     text-align: center;
     border-radius: 2rem;
     animation: breathing 3s linear infinite;
-    /* margin: 40px 0; */
 }
 .know-images{
     display: flex;
@@ -548,34 +547,48 @@ nav{
     animation: breathing 3s linear infinite;
     margin-right: 1%;
     gap: 1%;
+    
 }
 
 .proj1{
     background-color: red;
     grid-row: 3 / 21;
     grid-column: 2 / 30;
+    background-image: url(images/proj1.png);
 }
 .proj2{
     background-color: green;
     grid-row: 3/ 39;
     grid-column: 30/40;
+    background-image: url(images/proj2.png);
+
 }
 .proj3{
     background-color: pink;
     grid-row: 21/39;
     grid-column: 14/30;
+    background-image: url(images/proj3.png);
 }
 .proj4{
     background-color: purple;
     grid-row: 21/30;
     grid-column: 2/14;
+    background-image: url(images/proj4.png);
 }
 .proj5{
     background-color: oldlace;
     grid-row: 30/39;
     grid-column: 2/14;
+    background-image: url(images/proj5.png);
 }
 
+.proj1,.proj2,.proj3,.proj4,.proj5 {
+    opacity: .5;
+}
+.proj1:hover,.proj2:hover,.proj3:hover,.proj4:hover,.proj5:hover {
+    opacity: 1;
+    border: 2px solid whitesmoke;
+}
 
 
 
