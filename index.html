@@ -18,6 +18,7 @@
         </div>
 
         <div class="anchors">
+
             <a href="#home" class="nav-items first">
                 <span></span>
                 <span></span>
@@ -25,33 +26,26 @@
                 <span></span>
                 Home
             </a>
-            <a href="#" class="nav-items">
+            <a href="#about" class="nav-items">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 About
             </a>
-            <a href="#" class="nav-items">
+            <a href="#skills" class="nav-items">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Skills
             </a>
-            <a href="#" class="nav-items">
+            <a href="#contact" class="nav-items">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Projects
-            </a>
-            <a href="#" class="nav-items">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Contacts
+                Contact
             </a>
         </div>
     </div>
@@ -69,7 +63,9 @@
 
                 <div class="resume">
                     <h1>Hi! I'm Jon.</h1>
+
                     <a href="" download="Resume 4-4-23 Jon Brennan.docx">
+                        
                         <span></span>
                         <span></span>
                         <span></span>
@@ -79,17 +75,21 @@
 
                 </div>
                 <h3>I'm a developer with a passion for front end and an addiction to learning.</h3>
+                <div class="github-nav">
+                    <a href="https://github.com/CodeDog3?tab=repositories"><div class="github-nav"></div></a>
+                </div>
             </div>
+
         </div>
     </div>
     <div class="transition">
 
     </div>
     <div class="content">
-        <div class="about">
+        <div class="about" id="about">
             <div class="about-me">
                 <div class="about1">
-                    Fill something in here -- maybe another picture?
+                    
                 </div>
                 <div class="about2">
                     <hr>
@@ -171,7 +171,7 @@
         <div class="transition">
 
         </div>
-        <div class="manager">
+        <div class="manager" id = "skills">
 
             <div class="skills">
                 <div class="know">
@@ -210,24 +210,43 @@
             </div>
 
             <div class="skill-grid">
-                    
-                <div class="proj1">
-a
-                </div>
-                <div class="proj2">
-b
-                </div>
-                <div class="proj3">
-c
-                </div>
-                <div class="proj4">
-d
-                </div>
-                <div class="proj5">
-f
-                </div>
+                        <div class="proj1 proj">
+                           <p>Online Bookstore</p>
+                           <div class="desc1 desc"> <p>This project allows the user to register an account, search through a bookstore, add books to a cart, and make a "purchase"</p></div>
+                           <div class="github1 github">
+                                <a href="https://github.com/CodeDog3/Bookstore"><div class="github"></div></a>
+                           </div>
+                        </div>
 
-
+                        <div class="proj2 proj">
+                            <p>TBD</p>
+                            <div class="desc2 desc"></div>
+                            <div class="github2 github">
+                                <a href="https://github.com/CodeDog3?tab=repositories"><div class="github"></div></a>
+                            </div>
+                        </div>
+                        <div class="proj3 proj">
+                            <p>UML Editor</p>
+                            <div class="desc3 desc"><p>This was a class project where we designed and implemented a UML editor.</p>
+                            </div>
+                            <div class="github3 github">
+                                <a href="https://github.com/CodeDog3/2021fa-420-Java"><div class="github"></div></a>
+                            </div>
+                        </div>
+                        <div class="proj4 proj">
+                            <p>TBD</p>
+                            <div class="desc4 desc"></div>
+                            <div class="github4 github">
+                                <a href="https://github.com/CodeDog3?tab=repositories"><div class="github"></div></a>
+                            </div>
+                        </div>
+                        <div class="proj5 proj">
+                            <p>TBD</p>
+                            <div class="desc5 desc"></div>
+                            <div class="github5 github">
+                                <a href="https://github.com/CodeDog3?tab=repositories"><div class="github"></div></a>
+                            </div>
+                        </div>
             </div>
 
 
@@ -239,6 +258,19 @@ f
 
         </div>
 
+        <div class="contact-wrapper" id = "contact">
+            <h1>Contact Me!</h1>
+                    <form action="https://formsubmit.co/jonbrennan800@gmail.com" method = "post">
+                        <div class="personal">
+                            <p>Name:</p> <input type="input" name = "name" placeholder="Enter your Name" required><br>
+                            <p>Email:</p> <input type="email" name = "email" placeholder="Enter your Email" required><br>
+                        </div>
+                        <div class="message">
+                            <p>Message:</p> <textarea id = "message" name = "message" placeholder="Type your message" class="message" required></textarea>
+                            <br>
+                        </div>
+                            <button type = "submit">Submit</button>
+                    </form>
     </div>
 
 </body>

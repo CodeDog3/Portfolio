@@ -44,6 +44,15 @@ nav{
     z-index: 5;
 
 }
+.github-nav{
+    
+    height: 50px;
+    width:50px;
+
+    background-image: url(images/technologies/github.webp);
+    z-index: 15;
+    background-size: cover;
+}
 
 
 
@@ -286,14 +295,14 @@ nav{
     background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%);
 }
 
-.resume > a:hover span:nth-child(1) {
+/* .resume > a:hover span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 3px;
     background: linear-gradient(to right, #000, #fff);
-    animation: move-right 1s linear infinite;
+    /* animation: move-right 1s linear infinite; 
 }
 
  .resume > a:hover span:nth-child(2) {
@@ -303,7 +312,7 @@ nav{
     height: 100%;
     width: 2px;
     background: linear-gradient(to top, #000, #fff);
-    animation: move-down 1s linear infinite;
+    /* animation: move-down 1s linear infinite; 
 }
 
 .resume > a:hover span:nth-child(3) {
@@ -313,7 +322,7 @@ nav{
     width: 100%;
     height: 2px;
     background: linear-gradient(to right, #000, #fff);
-    animation: move-left 1s linear infinite;
+    /* animation: move-left 1s linear infinite; 
 }
 
 .resume > a:hover span:nth-child(4) {
@@ -323,8 +332,8 @@ nav{
     height: 100%;
     width: 2px;
     background: linear-gradient(to top, #000, #fff);
-    animation: move-top 1s linear infinite;
-}
+    /* animation: move-top 1s linear infinite; 
+} */
 
 /******************************************************/
 
@@ -365,10 +374,17 @@ nav{
     width: 20%;
 }
 .about1{
- 
+    background-image: url(images/filler.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height:35%;
+
+}
+.about2 hr{
+    margin-top: 0;
 }
 .about2{
+
     height: 25%;
 }
 
@@ -547,6 +563,7 @@ nav{
     animation: breathing 3s linear infinite;
     margin-right: 1%;
     gap: 1%;
+    position: relative;
     
 }
 
@@ -590,6 +607,81 @@ nav{
     border: 2px solid whitesmoke;
 }
 
+.proj{
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 2rem;
+}
+.github {
+    visibility: hidden;
+    height:50px;
+    width:50px;
+    background-image: url(images/technologies/github.webp);
+    background-size: cover;
+}
+.desc{
+    visibility: hidden;
+    font-size: 22px;
+}
+.proj:hover .desc{
+    visibility: visible;
+}
+
+.proj:hover .github{
+    visibility: visible;
+}
+
+
+
+
+/******************************************************/
+
+/**********************Contact*************************/
+
+.contact-wrapper{
+    height: 450px;
+    width: 100%;
+    background: linear-gradient(315deg, #2b4162 0%, #2e2925 74%);
+    background-image: url(images/contact-bckg.jpg);
+    background-color: black;
+    background-size: 100%;
+    text-align: center;
+}
+.contact-wrapper h1 {
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+}
+.contact-wrapper form {
+    border: #2b4162;
+    margin: 0 auto;
+}
+
+.contact-wrapper button {
+
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:10px 15px;
+    border: 3px solid var(--blueish);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.contact-wrapper button:hover {
+    background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%);
+}
+.message{
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+    
+}
 
 
 
